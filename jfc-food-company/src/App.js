@@ -4,6 +4,7 @@ import "./App.css";
 import Navibar from "./components/Navbar";
 import BuildAMeal from "./components/BuildAMeal";
 import Catering from "./components/Catering";
+import AboutUs from "./components/AboutUs";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
         <Route exact path="/" />
         <Route exact path="/build-a-meal" component={BuildAMeal} />
         <Route exact path="/catering" component={Catering} />
+        <Route exact path="/about" component={AboutUs} />
       </Switch>
       <h1>JFC Food Company website under construction</h1>
     </div>
