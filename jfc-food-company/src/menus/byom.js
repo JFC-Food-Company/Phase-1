@@ -1,64 +1,85 @@
-const byom = [
-   {
-       "meats" : [
-          'Chicken',
-          'Tilapia',
-          'Salmon',
-          'Beef Steak',
-          'Shrimp',
-          'Pork Chops',
-          'Meatloaf',
-          'Beef Patties',
-          'Turkey Patties',
-          'Meatballs'
-       ],
-       "vegetables" : [
-           'Broccoli',
-           'Asparagus',
-           'Brussel Sprouts',
-           'Steamed Cabbage',
-           'Veggie Medley',
-           'SW Black Beans',
-           'Spinach',
-           'Kale',
-           'Collard Greens',
-           'Zucchini/noodles',
-           'Spring Mix Salad'
-       ],
-       "starches" : [
-           "Mac'n Cheese",
-           "Pasta",
-           "Quinoa",
-           "Rice",
-           "Potatoes",
-           "Candied Yams",
-           "Skillet Sweet Potato"
-       ],
-       "sauces" : [
-           'Shire Lime Sauce',
-           'Mango Habanero',
-           'Lemon Pepper',
-           'Garlic Parmesean',
-           'Spicy Cajun',
-           'Apple Jalapeno',
-           'Sweet Asian Chilli',
-           'Spicy BBQ Sauce',
-       ],
-       "salsas-dips" : [
-           'Pico De Gallo',
-           'Hot/Medium Salsa',
-           'Guacamole',
-           'Mango Salsa'
-       ],
-       "pasta-sauce" : [
-           'Alfredo',
-           'Traditional Pesto',
-           'Spinach & Basil Pesto',
-           'Traditional Tomato',
-           'Cajun Tomato'
-       ]
-       
-   }
-]
-
-export default byom 
+export const byom = [
+  {
+    name: "Meat",
+    description: "4-6oz",
+    image: "",
+    items: [
+      "Chicken",
+      "Tilapia",
+      "Salmon",
+      "Beef Steak",
+      "Shrimp",
+      "Pork Chops",
+      "Meatloaf (Turkey/Beef)",
+      "Beef Patties",
+      "Turkey Patties",
+      "Meatballs (Turkey/Beef)",
+    ],
+    "cooking options": "* can be smoked, baked, or grilled",
+  },
+  {
+    name: "Vegetables",
+    description: "1 cup",
+    image: "",
+    items: [
+      "Broccoli",
+      "Asparagus",
+      "Brussel Sprouts",
+      "Steamed Cabbage",
+      "Veggie Medley",
+      "SW Black Beans",
+      "Spinach",
+      "Kale",
+      "Collard Greens",
+      "Zucchini/noodles",
+      "Spring Mix Salad",
+    ],
+  },
+  {
+    name: "Starches/Grains",
+    description: "1 cup",
+    image: "",
+    items: [
+      "Mac'n Cheese",
+      "Pasta",
+      "Quinoa",
+      "Rice",
+      "Potatoes",
+      "Candied Yams",
+      "Skillet Sweet Potato",
+    ],
+  },
+  {
+    name: "Sauces",
+    description: "2 oz",
+    image: "",
+    items: [
+      "Shire Lime Sauce",
+      "Mango Habanero",
+      "Lemon Pepper",
+      "Garlic Parmesean",
+      "Spicy Cajun",
+      "Apple Jalapeno",
+      "Sweet Asian Chilli",
+      "Spicy BBQ Sauce",
+    ],
+  },
+  {
+    name: "Salsas/Dips",
+    description: "2-4 oz",
+    image: "",
+    items: ["Pico De Gallo", "Hot/Medium Salsa", "Guacamole", "Mango Salsa"],
+  },
+  {
+    name: "Pasta Sauces",
+    description: "4-6 oz",
+    image: "",
+    items: [
+      "Alfredo",
+      "Traditional Pesto",
+      "Spinach & Basil Pesto",
+      "Traditional Tomato",
+      "Cajun Tomato",
+    ],
+  },
+];
