@@ -1,35 +1,4 @@
-import { keyframes } from "styled-components"
-
-export const ScaleDown = keyframes`
- {
-  0% {
-    -webkit-transform: translateZ(1);
-            transform: translateZ(1);
-    opacity: 1;
-  }
-  100% {
-    -webkit-transform: translateZ(600px);
-            transform: translateZ(600px);
-    opacity: 0;
-  }
-`
-// animation: slide-out-fwd-center 5s cubic-bezier(0.550, 0.085, 0.680, 0.530) reverse both;
-
-export const FadeIn = keyframes`
-
-  0% {
-    opacity: 1;
-  }
-  50%{
-    opacity: 0;
-  }
-  100% {
-    opacity: 0;
-  }
-
-`;
-
-//animation: fade-out 1s ease-out reverse both;
+import { keyframes } from "styled-components";
 
 export const LogoFocusIn = keyframes`
 0% {

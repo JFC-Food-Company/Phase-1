@@ -1,50 +1,17 @@
 import Styled from "styled-components";
 import { LogoFocusIn } from "./keyframes";
-import { Navbar } from "reactstrap";
+import { Navbar, Nav, DropdownToggle } from "reactstrap";
 import { NavLink } from "react-router-dom";
 
-export const LinkGray = Styled.a`
-text-align: center;
-text-decoration: none;
-justify-content: center;
-color: gray;
-white-space: nowrap;
-overflow: hidden;
-text-overflow: ellipsis;
-width: 100%;
-font-family: 'Rubik', sans-serif;
-font-weight: 100;
-padding-top: 15%;
+export const JFCLogo = Styled.img`
+width: 50%;
+cursor: pointer;
 `;
 
-export const LinkBlack = Styled.a`
-text-align: center;
-text-decoration: none;
-justify-content: center;
-color: black;
-white-space: nowrap;
-overflow: hidden;
-text-overflow: ellipsis;
-width: 100%;
-font-family: 'Rubik', sans-serif;
-font-weight: 100;
-padding-top: 7%;
-
-    &::after {
-    content: " ";
-    display: block;
-    width: 0;
-    height: 2px;
-    background: black;
-    transition: width .2s;
-    margin: 0 auto;
-    }
-
-    &:hover::after {
-    width: 100%;
-    transition: width .2s;
-    margin: 0 auto;
-    }
+export const MenusText = Styled.p`
+display:flex;
+color:black;
+align-items: center;
 `;
 
 export const Navigation = Styled(Navbar)`
@@ -53,43 +20,35 @@ display: flex;
 flex-direction: row;
 flex-wrap: nowrap;
 justify-content: space-evenly;
-z-Index: 10;
-border: 1px red solid;
+font-family: 'Rubik', sans-serif;
+border: 2px lightgray solid;
 transition: box-shadow 0.2s ease;
         &:hover {
           box-shadow: 0 6px 4px rgba(0, 0, 0, 0.18);
         }
 `;
 
+export const NavLinkBar = Styled(Nav)`
+color:black;
+width: 100%;
+padding-top: 2%;
+display: flex;
+justify-content: space-between;
+font-size: 100%;
+font-weight:600;
+`;
+
+export const MenusToggle = Styled(DropdownToggle)`
+color:black;
+padding: 0;
+`;
+
 export const NaviLink = Styled(NavLink)`
 display: flex;
-text-align: center;
-text-decoration: none;
-justify-content: center;
 color: black;
-white-space: nowrap;
-overflow: hidden;
-text-overflow: ellipsis;
+cursor: pointer;
 width: 100%;
-font-family: 'Rubik', sans-serif;
-font-weight: 100;
-padding-top: 7%;
 
-    &::after {
-    content: " ";
-    display: block;
-    width: 0;
-    height: 2px;
-    background: black;
-    transition: width .2s;
-    margin: 0 auto;
-    }
-
-    &:hover::after {
-    width: 100%;
-    transition: width .2s;
-    margin: 0 auto;
-    }
 `;
 
 //animations
