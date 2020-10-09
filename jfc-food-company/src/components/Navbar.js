@@ -1,15 +1,22 @@
 import React, { useState } from "react";
-import { Navigation, LogoFade, NaviLink } from "../styles/navbar_style";
+import { Link } from "react-router-dom";
+import {
+  Navigation,
+  LogoFade,
+  NaviLink,
+  NavLinkBar,
+  JFCLogo,
+  MenusToggle,
+  MenusText,
+} from "../styles/navbar_style";
 
 import Logo from "../images/Logo-Placeholder.png";
 import {
   Collapse,
   NavbarToggler,
   NavbarBrand,
-  Nav,
   NavItem,
   UncontrolledDropdown,
-  DropdownToggle,
   DropdownMenu,
   DropdownItem,
 } from "reactstrap";
@@ -20,34 +27,22 @@ const Navibar = () => {
   const toggle = () => setIsOpen(!isOpen);
 
   return (
-    <Navigation dark expand="sm">
+    <Navigation dark expand="lg">
       <NavbarBrand>
         <LogoFade>
-          <img
-            src={Logo}
-            alt="logo"
-            style={{
-              width: "100%",
-              cursor: "pointer",
-              border: "1px red solid",
-            }}
-          />
+          <Link to="/">
+            <JFCLogo src={Logo} />
+          </Link>
         </LogoFade>
       </NavbarBrand>
       <NavbarToggler onClick={toggle} />
       <Collapse isOpen={isOpen} navbar>
-        <Nav className="mr-auto" navbar>
+        <NavLinkBar className="mr-auto" navbar>
           <UncontrolledDropdown nav inNavbar>
-            <DropdownToggle
-              style={{
-                color: "black",
-              }}
-              nav
-              caret
-            >
-              Menus
-            </DropdownToggle>
-            <DropdownMenu right>
+            <MenusToggle nav>
+              <MenusText>Menus</MenusText>
+            </MenusToggle>
+            <DropdownMenu left>
               <DropdownItem>Chef's Choice</DropdownItem>
               <DropdownItem>Keto</DropdownItem>
               <DropdownItem divider />
@@ -63,7 +58,7 @@ const Navibar = () => {
           <NavItem>
             <NaviLink to="/about">About Us</NaviLink>
           </NavItem>
-        </Nav>
+        </NavLinkBar>
       </Collapse>
     </Navigation>
   );
