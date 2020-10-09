@@ -134,6 +134,12 @@ table {
   border-spacing: 0;
 }
 
+.menu-flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-bottom: 2%;
+}
 a:visited,
 a:hover,
 a:active,

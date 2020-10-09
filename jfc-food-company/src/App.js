@@ -3,6 +3,8 @@ import { Route, Switch } from "react-router-dom";
 import "./App.css";
 import Navibar from "./components/Navbar";
 import AboutUs from "./components/AboutUs";
+import KetoMenu from "./components/KetoMenu";
+import ChefsChoiceMenu from "./components/ChefsChoiceMenu"
 import MealWrapper from "./components/MealChoiceWrapper";
 import { catering } from "./menus/catering";
 import { byom } from "./menus/byom";
@@ -28,6 +30,8 @@ function App() {
           )}
         />
         <Route exact path="/about" component={AboutUs} />
+        <Route exact path="/keto" component={KetoMenu} />
+        <Route exact path="/chefs-choice" component={ChefsChoiceMenu} />
       </Switch>
       <h1>JFC Food Company website under construction</h1>
     </div>
