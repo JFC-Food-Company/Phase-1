@@ -2,11 +2,12 @@ import React from "react";
 import { Route, Switch } from "react-router-dom";
 import "./App.css";
 import Navibar from "./components/Navbar";
-import BuildAMeal from "./components/BuildAMeal";
-import Catering from "./components/Catering";
 import AboutUs from "./components/AboutUs";
 import KetoMenu from "./components/KetoMenu";
 import ChefsChoiceMenu from "./components/ChefsChoiceMenu"
+import MealWrapper from "./components/MealChoiceWrapper";
+import { catering } from "./menus/catering";
+import { byom } from "./menus/byom";
 
 function App() {
   return (
@@ -14,8 +15,20 @@ function App() {
       <Navibar />
       <Switch>
         <Route exact path="/" />
-        <Route exact path="/build-a-meal" component={BuildAMeal} />
-        <Route exact path="/catering" component={Catering} />
+        <Route
+          exact
+          path="/build-a-meal"
+          render={(props) => (
+            <MealWrapper {...props} data={byom} title="Build Your Own Meal" />
+          )}
+        />
+        <Route
+          exact
+          path="/catering"
+          render={(props) => (
+            <MealWrapper {...props} data={catering} title="Catering" />
+          )}
+        />
         <Route exact path="/about" component={AboutUs} />
         <Route exact path="/keto" component={KetoMenu} />
         <Route exact path="/chefs-choice" component={ChefsChoiceMenu} />
