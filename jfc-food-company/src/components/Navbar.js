@@ -8,7 +8,7 @@ import {
   JFCLogo,
   MenusToggle,
   MenusText,
-} from "../styles/navbar_style";
+} from "../styles/NavbarStyle";
 
 import Logo from "../images/Logo-Placeholder.png";
 import {
@@ -43,14 +43,20 @@ const Navibar = () => {
               <MenusText>Menus</MenusText>
             </MenusToggle>
             <DropdownMenu left>
-              <DropdownItem>Chef's Choice</DropdownItem>
-              <DropdownItem>Keto</DropdownItem>
+              <DropdownItem tag={Link} to="/">
+                Chef's Choice
+              </DropdownItem>
+              <DropdownItem tag={Link} to="/">
+                Keto
+              </DropdownItem>
               <DropdownItem divider />
-              <DropdownItem>Build A Meal</DropdownItem>
+              <DropdownItem tag={Link} to="/build-a-meal">
+                Build A Meal
+              </DropdownItem>
             </DropdownMenu>
           </UncontrolledDropdown>
           <NavItem>
-            <NaviLink to="/catering">Meal Plans</NaviLink>
+            <NaviLink to="/">Meal Plans</NaviLink>
           </NavItem>
           <NavItem>
             <NaviLink to="/catering">Catering</NaviLink>
