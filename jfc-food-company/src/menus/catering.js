@@ -2,7 +2,8 @@ export const catering = [
   {
     name: "Meat",
     description: "",
-    image: "",
+    image: "images/20200919_140933.jpg",
+    imageTitle: "BBQ Chicken",
     items: [
       "* Chicken",
       "* Tilapia",
@@ -16,12 +17,13 @@ export const catering = [
       "Enciladas (Red or Green Sauce)",
       "Traditional Lasagna",
     ],
-    "cooking options": "* can be fried, baked, or grilled",
+    cookingOptions: "* can be fried, baked, or grilled",
   },
   {
     name: "Vegetables",
     description: "",
     image: "",
+    imageTitle: "BBQ Chicken",
     items: [
       "Broccoli",
       "Asparagus",
@@ -41,6 +43,7 @@ export const catering = [
     name: "Side-Items",
     description: "",
     image: "",
+    imageTitle: "BBQ Chicken",
     items: [
       "Broccoli",
       "Asparagus",
@@ -60,6 +63,7 @@ export const catering = [
     name: "Sauces",
     description: "",
     image: "",
+    imageTitle: "BBQ Chicken",
     items: [
       "Shire Lime Sauce",
       "Mango Habanero",
@@ -78,6 +82,7 @@ export const catering = [
     name: "Soup",
     description: "",
     image: "",
+    imageTitle: "BBQ Chicken",
     items: [
       "Clam Chowder",
       "Chicken Noodle",
@@ -94,6 +99,7 @@ export const catering = [
     name: "Dessert",
     description: "",
     image: "",
+    imageTitle: "BBQ Chicken",
     items: ["Cheesecake", "Cupcakes", "Peach Cobbler", "Banana Pudding"],
   },
 ];

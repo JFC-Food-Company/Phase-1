@@ -1,14 +1,18 @@
 import React from "react";
 import MealCategory from "./MealChoiceCategory";
+import { Title } from "../styles/MealWrapperStyle";
 
 function MealWrapper({ data, title }) {
   return (
-    <div>
-      <h1>{title}</h1>
+    <>
+      <Title>
+        <h1>{title}</h1>
+      </Title>
+
       {data.map((category) => (
         <MealCategory category={category} />
       ))}
-    </div>
+    </>
   );
 }
 
