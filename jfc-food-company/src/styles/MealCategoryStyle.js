@@ -20,16 +20,16 @@ width: 30%;
 flex-direction: column;
 justify-content: flex-end;
 margin-left: 15%;
-
-
 `;
 
 export const FlexDiv2 = Styled.div`
 display: flex;
 width: 50%;
 flex-direction: column;
-justify-content: flex-end;
+justify-content:center;
+align-content:center;
 align-items: center;
+border: 1px red solid;
 `;
 
 export const RowWrapper = Styled.div`
