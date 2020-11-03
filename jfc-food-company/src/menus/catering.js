@@ -23,7 +23,7 @@ export const catering = [
     name: "Vegetables",
     description: "",
     image: "images/image_placeholder.jpg",
-    imageTitle: "BBQ Chicken",
+    imageTitle: "Food Caption",
     items: [
       "Broccoli",
       "Asparagus",
@@ -43,7 +43,7 @@ export const catering = [
     name: "Side-Items",
     description: "",
     image: "images/image_placeholder.jpg",
-    imageTitle: "BBQ Chicken",
+    imageTitle: "Food Caption",
     items: [
       "Broccoli",
       "Asparagus",
@@ -61,9 +61,9 @@ export const catering = [
   },
   {
     name: "Sauces",
-    description: "images/image_placeholder.jpg",
-    image: "",
-    imageTitle: "BBQ Chicken",
+    description: "",
+    image: "images/image_placeholder.jpg",
+    imageTitle: "Food Caption",
     items: [
       "Shire Lime Sauce",
       "Mango Habanero",
@@ -82,7 +82,7 @@ export const catering = [
     name: "Soup",
     description: "",
     image: "images/image_placeholder.jpg",
-    imageTitle: "BBQ Chicken",
+    imageTitle: "Food Caption",
     items: [
       "Clam Chowder",
       "Chicken Noodle",
@@ -99,7 +99,7 @@ export const catering = [
     name: "Dessert",
     description: "",
     image: "images/image_placeholder.jpg",
-    imageTitle: "BBQ Chicken",
+    imageTitle: "Food Caption",
     items: ["Cheesecake", "Cupcakes", "Peach Cobbler", "Banana Pudding"],
   },
 ];

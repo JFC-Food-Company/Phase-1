@@ -3,7 +3,7 @@ export const byom = [
     name: "Meat",
     description: "4-6oz",
     image: "images/image_placeholder.jpg",
-    imageTitle: "BBQ Chicken",
+    imageTitle: "Food Caption",
     items: [
       "Chicken",
       "Tilapia",
@@ -22,7 +22,7 @@ export const byom = [
     name: "Vegetables",
     description: "1 cup",
     image: "images/image_placeholder.jpg",
-    imageTitle: "BBQ Chicken",
+    imageTitle: "Food Caption",
     items: [
       "Broccoli",
       "Asparagus",
@@ -41,7 +41,7 @@ export const byom = [
     name: "Starches/Grains",
     description: "1 cup",
     image: "images/image_placeholder.jpg",
-    imageTitle: "BBQ Chicken",
+    imageTitle: "Food Caption",
     items: [
       "Mac'n Cheese",
       "Pasta",
@@ -56,7 +56,7 @@ export const byom = [
     name: "Sauces",
     description: "2 oz",
     image: "images/image_placeholder.jpg",
-    imageTitle: "BBQ Chicken",
+    imageTitle: "Food Caption",
     items: [
       "Shire Lime Sauce",
       "Mango Habanero",
@@ -72,14 +72,14 @@ export const byom = [
     name: "Salsas/Dips",
     description: "2-4 oz",
     image: "images/image_placeholder.jpg",
-    imageTitle: "BBQ Chicken",
+    imageTitle: "Food Caption",
     items: ["Pico De Gallo", "Hot/Medium Salsa", "Guacamole", "Mango Salsa"],
   },
   {
     name: "Pasta Sauces",
     description: "4-6 oz",
     image: "images/image_placeholder.jpg",
-    imageTitle: "BBQ Chicken",
+    imageTitle: "Food Caption",
     items: [
       "Alfredo",
       "Traditional Pesto",

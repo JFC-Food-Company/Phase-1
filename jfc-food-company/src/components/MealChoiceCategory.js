@@ -7,6 +7,7 @@ import {
   FlexDiv,
   FlexDiv2,
   Header3,
+  Text,
 } from "../styles/MealCategoryStyle";
 
 function MealCategory({ category }) {
@@ -25,7 +26,7 @@ function MealCategory({ category }) {
         </FlexDiv>
         <FlexDiv2>
           <Image src={category.image} />
-          <p>{category.imageTitle}</p>
+          <Text>{category.imageTitle}</Text>
         </FlexDiv2>
       </RowWrapper>
     </MainDivWrapper>
