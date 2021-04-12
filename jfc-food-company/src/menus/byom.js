@@ -2,7 +2,8 @@ export const byom = [
   {
     name: "Meat",
     description: "4-6oz",
-    image: "",
+    image: "images/image_placeholder.jpg",
+    imageTitle: "Food Caption",
     items: [
       "Chicken",
       "Tilapia",
@@ -15,12 +16,13 @@ export const byom = [
       "Turkey Patties",
       "Meatballs (Turkey/Beef)",
     ],
-    "cooking options": "* can be smoked, baked, or grilled",
+    cookingOptions: "* can be smoked, baked, or grilled",
   },
   {
     name: "Vegetables",
     description: "1 cup",
-    image: "",
+    image: "images/image_placeholder.jpg",
+    imageTitle: "Food Caption",
     items: [
       "Broccoli",
       "Asparagus",
@@ -38,7 +40,8 @@ export const byom = [
   {
     name: "Starches/Grains",
     description: "1 cup",
-    image: "",
+    image: "images/image_placeholder.jpg",
+    imageTitle: "Food Caption",
     items: [
       "Mac'n Cheese",
       "Pasta",
@@ -52,7 +55,8 @@ export const byom = [
   {
     name: "Sauces",
     description: "2 oz",
-    image: "",
+    image: "images/image_placeholder.jpg",
+    imageTitle: "Food Caption",
     items: [
       "Shire Lime Sauce",
       "Mango Habanero",
@@ -67,13 +71,15 @@ export const byom = [
   {
     name: "Salsas/Dips",
     description: "2-4 oz",
-    image: "",
+    image: "images/image_placeholder.jpg",
+    imageTitle: "Food Caption",
     items: ["Pico De Gallo", "Hot/Medium Salsa", "Guacamole", "Mango Salsa"],
   },
   {
     name: "Pasta Sauces",
     description: "4-6 oz",
-    image: "",
+    image: "images/image_placeholder.jpg",
+    imageTitle: "Food Caption",
     items: [
       "Alfredo",
       "Traditional Pesto",
